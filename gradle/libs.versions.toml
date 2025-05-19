@@ -1,10 +1,10 @@
 [versions]
 # Plugins
-worldedit = "7.2.16"
+worldedit = "7.3.11"
 dynmap = "3.6"
 
 # Gradle plugins
-bukkityml = "0.6.0"
+bukkityml = "0.7.1"
 
 [libraries]
 # Plugins
@@ -13,4 +13,4 @@ dynmapCore = { group = "us.dynmap", name = "DynmapCoreAPI", version.ref = "dynma
 dynmapApi = { group = "us.dynmap", name = "dynmap-api", version.ref = "dynmap" }
 
 [plugins]
-pluginyml = { id = "net.minecrell.plugin-yml.bukkit", version.ref = "bukkityml" }
+pluginyml = { id = "de.eldoria.plugin-yml.bukkit", version.ref = "bukkityml" }
