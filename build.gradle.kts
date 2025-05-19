@@ -1,11 +1,8 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-
 plugins {
     java
     `java-library`
 
     alias(libs.plugins.pluginyml)
-    alias(libs.plugins.shadow)
     alias(libs.plugins.minotaur)
 }
 
@@ -39,15 +36,6 @@ dependencies {
     compileOnly(libs.worldedit)
     compileOnly(libs.dynmapCore) { isTransitive = false }
     compileOnly(libs.dynmapApi) { isTransitive = false }
-    implementation("org.bstats:bstats-bukkit")
-    implementation("org.bstats:bstats-base")
-}
-
-tasks.named<ShadowJar>("shadowJar") {
-    archiveClassifier.set(null as String?)
-    dependencies {
-        relocate("org.bstats", "com.plotsquared.plot2dynmap.metrics")
-    }
 }
 
 bukkit {
@@ -59,10 +47,6 @@ bukkit {
     version = rootProject.version.toString()
     depend = listOf("PlotSquared", "dynmap")
     website = "https://www.spigotmc.org/resources/1292/"
-}
-
-tasks.named("build").configure {
-    dependsOn("shadowJar")
 }
 
 val supportedVersions = listOf("1.20", "1.20.1")

@@ -9,7 +9,6 @@ import com.plotsquared.core.util.query.PlotQuery;
 import com.sk89q.worldedit.regions.CuboidRegion;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
@@ -306,7 +305,6 @@ public class Plot2DynmapPlugin extends JavaPlugin implements Listener, Runnable 
         this.plotAreaManager = PlotSquared.get().getPlotAreaManager();
 
         getServer().getPluginManager().registerEvents(this, this);
-        Metrics metrics = new Metrics(this, 6400);
         MarkerAPI markerApi = dynAPI.getMarkerAPI();
         if (markerApi == null) {
             getLogger().severe("Error loading dynmap-API");
