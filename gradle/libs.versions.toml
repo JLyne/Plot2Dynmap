@@ -13,4 +13,4 @@ dynmapCore = { group = "us.dynmap", name = "DynmapCoreAPI", version.ref = "dynma
 dynmapApi = { group = "us.dynmap", name = "dynmap-api", version.ref = "dynmap" }
 
 [plugins]
-pluginyml = { id = "de.eldoria.plugin-yml.bukkit", version.ref = "bukkityml" }
+pluginyml = { id = "de.eldoria.plugin-yml.paper", version.ref = "bukkityml" }
