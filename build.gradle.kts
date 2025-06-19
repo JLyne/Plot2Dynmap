@@ -44,7 +44,7 @@ paper {
     name = "Plot2Dynmap"
     main = "com.plotsquared.plot2dynmap.Plot2DynmapPlugin"
     authors = listOf("Empire92", "NotMyFault", "dordsor21")
-    apiVersion = "1.21.5"
+    apiVersion = "1.21.61"
     description = "This plugin adds a marker around claimed PlotSquared plots in the dynmap interface"
     version = rootProject.version.toString()
     website = "https://www.spigotmc.org/resources/1292/"
