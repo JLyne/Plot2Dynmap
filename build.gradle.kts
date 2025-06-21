@@ -23,10 +23,11 @@ tasks.compileJava.configure {
 version = "7.0.1-SNAPSHOT"
 
 repositories {
-    mavenCentral()
     maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
     maven { url = uri("https://repo.mikeprimm.com/") }
     maven { url = uri("https://maven.enginehub.org/repo/") }
+    mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -44,7 +45,7 @@ paper {
     name = "Plot2Dynmap"
     main = "com.plotsquared.plot2dynmap.Plot2DynmapPlugin"
     authors = listOf("Empire92", "NotMyFault", "dordsor21")
-    apiVersion = "1.21.61"
+    apiVersion = "1.21.6"
     description = "This plugin adds a marker around claimed PlotSquared plots in the dynmap interface"
     version = rootProject.version.toString()
     website = "https://www.spigotmc.org/resources/1292/"
