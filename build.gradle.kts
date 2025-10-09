@@ -1,4 +1,3 @@
-import net.minecrell.pluginyml.bukkit.BukkitPluginDescription
 import net.minecrell.pluginyml.paper.PaperPluginDescription
 
 plugins {
@@ -9,15 +8,7 @@ plugins {
 }
 
 the<JavaPluginExtension>().toolchain {
-    languageVersion.set(JavaLanguageVersion.of(21))
-}
-
-configurations.all {
-    attributes.attribute(TargetJvmVersion.TARGET_JVM_VERSION_ATTRIBUTE, 21)
-}
-
-tasks.compileJava.configure {
-    options.release.set(21)
+    languageVersion.set(JavaLanguageVersion.of(25))
 }
 
 version = "7.0.1-SNAPSHOT"
