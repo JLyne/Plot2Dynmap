@@ -150,17 +150,17 @@ public class Plot2DynmapPlugin extends JavaPlugin implements Listener, Runnable 
 
             x = new double[4];
             z = new double[4];
-            x[0] = region.getMinimumPoint().getX();
-            z[0] = region.getMinimumPoint().getZ();
+            x[0] = region.getMinimumPoint().x();
+            z[0] = region.getMinimumPoint().z();
 
-            x[1] = region.getMinimumPoint().getX();
-            z[1] = region.getMaximumPoint().getZ() + 1;
+            x[1] = region.getMinimumPoint().x();
+            z[1] = region.getMaximumPoint().z() + 1;
 
-            x[2] = region.getMaximumPoint().getX() + 1;
-            z[2] = region.getMaximumPoint().getZ() + 1;
+            x[2] = region.getMaximumPoint().x() + 1;
+            z[2] = region.getMaximumPoint().z() + 1;
 
-            x[3] = region.getMaximumPoint().getX() + 1;
-            z[3] = region.getMinimumPoint().getZ();
+            x[3] = region.getMaximumPoint().x() + 1;
+            z[3] = region.getMinimumPoint().z();
 
             final String markerId = world.getName() + "_" + name + (i == 0 ? "" : "-" + i);
             AreaMarker areaMarker = this.resAreas.remove(markerId); /* Existing area? */
