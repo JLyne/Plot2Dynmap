@@ -4,7 +4,7 @@ worldedit = "7.3.14"
 dynmap = "3.7-SNAPSHOT"
 
 # Gradle plugins
-bukkityml = "0.7.1"
+bukkityml = "0.8.0"
 
 [libraries]
 # Plugins
