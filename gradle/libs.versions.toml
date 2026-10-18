@@ -1,6 +1,6 @@
 [versions]
 # Plugins
-worldedit = "7.4.3"
+worldedit = "7.4.5"
 dynmap = "3.7-SNAPSHOT"
 
 # Gradle plugins
